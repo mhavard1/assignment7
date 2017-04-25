@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("li").click(function(){
+                $(this).addClass("color")
+            });
+        });
+        $(document).ready(function(){
+            $(".h1").click(function(){
+                $(this).addClass("color")
+            });
+            $(".h2").click(function(){
+                $(this).addClass("color1")
+            });
+        });
+    </script>
+</head>
+
+<style>
+    .color{
+        background-color: blue;
+    }
+    .color1{
+        background-color: orange;
+    }
+    .color2 {
+        background-color: green;
+    }
+
+
+</style>
+
+<body>
+    <h class="h1">Why is Spelman the number one HBCU?</h>
+    <h class="h2">The reasons are listed below</h>
+        <p>Because all of its students are amazing, intelligent young women</p>
+        <p>Spelman's alumnae network is expansive and global</p>
+        <p>Spelman has an amazing and caring faculty</p>
+    <button>Hide Paragraph</button>
+
+        <ol>
+            <li>Spelbound
+            <li>NSO
+            <li>Founders Day
+            <li>Getting my Morehouse Brother
+        </ol>
+
+
+</body>
+</html>
