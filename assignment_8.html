@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--import proper Javascript and CSS files -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+    <!-- SAMPLE PICS FOR YOUR BG-->
+    <script>
+        $(document).ready(function(){
+
+            CardInfo = {
+                "from":"Mya",
+                "to":"Susie",
+                "location":[
+                    {
+                        city:"Atlanta",
+                        state:"Georgia"
+                    }
+                ],
+                "eventName": "Susie's Birthday"
+            };
+
+            //alert(CardInfo.eventName)
+
+
+        })
+    </script>
+
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">Party Time!</a>
+        
+    </div>
+</nav>
+
+<div class="row" >
+    <div class="col s12 valign-wrapper" style="border: dotted yellow; height:90vh; background-color: aqua;">
+
+        <div class="row" >
+            <div class="col s8 offset-s2 valign-wrapper z-depth-5 " style="border:; background-color: red;" >
+
+                <div class="row" >
+                    <div class="col s8 offset-s2 valign-wrapper" style="border:;" >
+
+                        <div class="card small pink lighten-4 z-depth-5">
+                            <div class="card-image">
+                                <img id="pic" src="http://dreamsteep.com/joomlatools-files/docman-images/generated/c9f0f895fb98ab9159f51fd0297e236d.png" style="width: 100%;" >
+                            </div>
+                            <div class="card-content pink-text darken-3" style="border:;" >
+                                <span class="card-title">HAPPY BIRTHDAY</span>
+                                <p>WE LOVE YOU</p>
+
+                            </div>
+                            <button type="button" onclick="myFunction()">Click for Surprise</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+    <p>By Mya Havard the Greatest</p>
+
+</footer>
+<script>
+    function myFunction() {
+        document.getElementById("pic").src = "http://www.jesus-is-savior.com/Evils%20in%20America/Rock-n-Roll/party.gif";
+    }
+    </script>
+
+</body>
+</html>
